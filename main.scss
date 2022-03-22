@@ -9,74 +9,12 @@ body {
   position: relative;
 }
 
-header {
-  width: 960px;
-  height: 100px;
-  margin: auto;
-}
-
-.global {
-  &-nav {
-    float: right;
-    margin-top: 60px;
-
-    li {
-      float: left;
-      margin: 0 20px;
-      font-size: 20px;
-      list-style: none;
-      font-family: 'Bitter', serif;
-    }
-  }
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  &:hover {
-    border-bottom: 2px solid;
-    padding-bottom: 3px;
-  }
-}
-
-#wrap {
-  background-color: #ffffff;
-  margin-top: 500px;
-  padding: 35px 0;
-}
-
-.content {
-  width: 960px;
-  margin: auto;
-}
-
-.main{
-  width: 700px;
-  margin: 0 10px;
-  float: left;
-}
-
-h1 {
-  font-family: 'Bitter', serif;
-  font-size: 36px;
-  border-bottom: 1px solid #cccccc;
-}
-
-h2 {
-  font-family: 'Bitter', serif;
-  font-size: 24px;
-}
-
 .clearfix {
   &:after {
     content: "";
     display: block;
     clear: both;
   }
-}
-
-section {
-  margin-bottom: 35px;
 }
 
 img{
@@ -93,32 +31,116 @@ img{
   background-size: 100% auto;
 }
 
-.sidebar {
-  width: 200px;
-  margin: 0 10px 0 30px;
-  float: right;
-  font-family: 'Bitter', serif;
 
-  h2 {
-    margin-bottom: 10px;
-  }
+/* header始まり */
+header {
+  width: 960px;
+  height: 100px;
+  margin: auto;
+  .global-nav {
+    float: right;
+    margin-top: 60px;
 
-  ul {
-    font-size: 16px;
-    padding-left: 20px;
-    a{
-      color:#333333;
+    &__list {
+      float: left;
+      margin: 0 20px;
+      font-size: 20px;
+      list-style: none;
+      font-family: 'Bitter', serif;
+
+      &--button {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      &--button:hover{
+        border-bottom: 2px solid;
+        padding-bottom: 3px;
+      }
     }
   }
 }
+/* header終わり */
 
-footer {
+/* wrap始まり */
+#wrap {
+  background-color: #ffffff;
+  margin-top: 500px;
+  padding: 35px 0;
+
+  .content {
+    width: 960px;
+    margin: auto;
+  }
+
+  .main{
+    width: 700px;
+    margin: 0 10px;
+    float: left;
+
+    &__title{
+      font-family: 'Bitter', serif;
+      font-size: 36px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    &__item{
+      margin-bottom: 35px;
+
+    &__item-title{
+        font-family: 'Bitter', serif;
+        font-size: 24px;
+      }
+    }
+
+    &__item-button{
+      color: #3583aa;
+      text-decoration: none;
+    }
+    &__item-button:hover{
+      border-bottom: 1px solid;
+    }
+  }
+
+  .sidebar {
+    width: 200px;
+    margin: 0 10px 0 30px;
+    float: right;
+    font-family: 'Bitter', serif;
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    &__lists {
+
+      font-size: 16px;
+      margin: 0 20px;
+      padding: 0;
+    }
+
+    &__lists-item{
+      color:#333333;
+      text-decoration: none;
+    }
+
+    &__lists-item:hover{
+      border-bottom: 1px solid;
+    }
+  }
+}
+/* wrap終わり */
+
+/* site-footer始まり */
+.site-footer {
   text-align: center;
   color:#ffffff;
   padding: 20px 0;
   background-color: #767671;
 
-  small {
+  &__comment {
     font-size: 12px;
   }
 }
+/* site-footer終わり */

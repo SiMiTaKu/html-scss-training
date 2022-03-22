@@ -11,57 +11,66 @@
 <!-- header始まり -->
 <header>
     <nav>
-        <ul class="global-nav">
-            <li><a href="">menu1</a></li>
-            <li><a href="">menu2</a></li>
-            <li><a href="">menu3</a></li>
+        <ul class = "global-nav">
+            <li class = "global-nav__list">
+                <a class ="global-nav__list--button" href="">menu1</a>
+            </li>
+            <li class = "global-nav__list">
+                <a class ="global-nav__list--button" href="">menu2</a>
+            </li>
+            <li class = "global-nav__list">
+                <a class ="global-nav__list--button" href="">menu3</a>
+            </li>
         </ul>
     </nav>
 </header>
 <!-- header終わり -->
-<div class="test"></div>
+
+
 <!-- wrap始まり -->
 <div id="wrap" class="clearfix">
     <div class="content">
         <div class="main">
-            <h1>Section1</h1>
+
+            <h1 class = main__title>Section1</h1>
             <p>ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</p>
-            <section>
-                <h2><a href=""><img src="portfolio-photo.jpg" alt="PHOTOGRAPH"></a></h2>
-                <p>
+
+            <section class = "main__item">
+                <h2 class = "main__item-title"><a href=""><img src="portfolio-photo.jpg" alt="PHOTOGRAPH"></a></h2>
+                <p class = "main__item-composition">
                     ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
                     ふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふがふが
-                    <a href="">詳しくみる ≫</a>
+                    <a class = "main__item-button" href="">詳しくみる ≫</a>
                 </p>
             </section>
-            <section>
-                <h2><a href="" ><img src="portfolio-video.jpg" alt="VIDEO"></a></h2>
-                <p>
+            <section class = "main__item">
+                <h2 class = "main__item-title"><a href="" ><img src="portfolio-video.jpg" alt="VIDEO"></a></h2>
+                <p class = "main__item-composition">
                     ほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふが
                     ほげふがほげふほげふがほげふがほげふがほげふがほげふがほげふがほげふがほげふが
-                    <a href="">詳しくみる ≫</a>
+                    <a class = "main__item-button" href="">詳しくみる ≫</a>
                 </p>
             </section>
         </div>
-        <aside class="sidebar">
-            <section>
-                <h2>Sidebar</h2>
-                <ul>
-                    <li><a href="">リスト1</a></li>
-                    <li><a href="">リスト2</a></li>
-                    <li><a href="">りスト3</a></li>
-                </ul>
-            </section>
-        </aside>
+
+        <section class="sidebar">
+            <h2 class = "sidebar__title">Sidebar</h2>
+            <ul class = "sidebar__lists">
+                <li><a class = "sidebar__lists-item" href="">リスト1</a></li>
+                <li><a class = "sidebar__lists-item" href="">リスト2</a></li>
+                <li><a class = "sidebar__lists-item" href="">りスト3</a></li>
+            </ul>
+        </section>
+
     </div>
 </div>
 <!-- wrap終わり -->
 
-<!-- footer始まり -->
-<footer>
-    <small>(C)2020 Nextbeat</small>
+<!-- site-footer始まり -->
+<footer class = "site-footer">
+    <small class = "site-footer__comment">(C)2020 Nextbeat</small>
 </footer>
-<!-- footer終わり -->
+<!-- site-footer終わり -->
 
 </body>
 </html>
